@@ -1,0 +1,10 @@
+1. It is important so that they cannot be added to or changed from outside the class.
+2. The __is_empty function should be used in the pop function. This way we can check if the
+collection is empty.
+3. Programmers pay attention to errors more and also to make errors messages more precise.
+4. If the top of the list were the first item in the list, every time you wanted to retrieve
+the top item you would have to loop through the entire list. If the last item is the top the
+time would remain constant.
+5. The internet defines unit testing as testing the smallest functional unit of code. This
+is important to this assignment as we will be using this code again in the future so ensuring
+that everything works is paramount.
