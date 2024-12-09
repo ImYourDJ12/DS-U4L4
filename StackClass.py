@@ -15,20 +15,20 @@ class ArrayStack:
 
   def pop(self):
     """Removes an element from the top of the collection"""
-    try:
+    if self.__is_empty() == False:
       item = self.__stack[-1]
       del self.__stack[-1]
       self.__size -= 1
       return item
-    except:
+    else:
       raise IndexError("index out of range")
 
   def top(self):
     """Returns the element at the top of the collection"""
-    try:
+    if self.__is_empty() == False:
       item = self.__stack[-1]
       return item
-    except:
+    else:
       raise IndexError("index out of range")
 
   def __is_empty(self):

@@ -1,54 +1,27 @@
-# # Implementation & testing of the ArrayStack class
+# Devon Taylor
+# U4L2
+# DS
+# 12/9/24
 
 from StackClass import ArrayStack
-from TEST_CODE import *
-import os
-
-'''
-Testing details can be found in TEST_CODE.py
-
-ENSURE ALL TESTS PASS BEFORE SUBMITTING
-
-IF COLORAMA NOT FOUND - ENTER INTO TERMINAL:
-pip install colorama
-'''
 
 def main():
-    
-    testStack = ArrayStack()
+    original = "Sphinx of black quartz, judge my vow"
+    new = ""
 
-    # TEST 1 - Test privacy
-    # BEFORE TESTING: implement __init__, __is_empty()
-    TEST_privacy(testStack)
+    stack = ArrayStack()
 
+    newOriginal = list(original)
 
-    # TEST 2 - Test stack creation
-    # BEFORE TESTING: implement __len__, __str__
-    TEST_new_stack(testStack)
-    
+    for i in range(len(newOriginal)):
+      stack.push(newOriginal[0])
+      del newOriginal[0]
 
-    # TEST 3 - Test push
-    # BEFORE TESTING: implement .push()
-    TEST_push(testStack)
+    for i in range(len(stack)):
+      new += stack.pop()
 
-
-    # TEST 4 - Test pop
-    # BEFORE TESTING: implement .pop()
-    TEST_pop(testStack)
-
-
-    # TEST 5 - Test top
-    # BEFORE TESTING: implement .top()
-    TEST_top(testStack)
-
-
-    # TEST 6 - Test docstrings
-    # BEFORE TESTING: implement all methods & docstrings
-    TEST_docs(testStack)
-
-
-
+    print(f"Original: {original}")
+    print(f"Reversed: {new}")
 
 if __name__ == "__main__":
-    os.system("clear")
     main()
