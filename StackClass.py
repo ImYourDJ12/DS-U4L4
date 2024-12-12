@@ -1,7 +1,3 @@
-# Devon Taylor
-# U4L1
-# DS
-# 12/4/24
 
 class ArrayStack:
   def __init__(self):

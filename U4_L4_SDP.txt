@@ -1,0 +1,5 @@
+1. You push a value when it is facing a certain way so that they are 
+separated when checking to see if it has a pair.
+2. You pop a value when checking to see if it has a pair.
+3. If the number of brackets in the string were odd or if the space between the 
+brackets is not even.
